@@ -48,7 +48,7 @@ section {
     text-align: center;
 }
 
-.intro button, .match button {
+.intro button {
     width: 150px;
     height: 50px;
     background: none;
@@ -65,6 +65,20 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%
+}
+
+.match button {
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 20px;
+    background: rgb(45, 117, 96);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
 }
 
 .winner {
@@ -91,4 +105,16 @@ section {
 
 .computer-hand {
     transform: rotateY(180deg);
+}
+
+/* Fade for intro */
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+div.fadeIn {
+    opacity: 0;
+    pointer-events: all;
 }
